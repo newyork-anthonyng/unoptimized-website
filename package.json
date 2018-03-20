@@ -1,8 +1,7 @@
 {
   "name": "unoptimized-website",
   "version": "1.0.0",
-  "description":
-    "This repository houses an unoptimized website. Nothing to see here.",
+  "description": "This repository houses an unoptimized website. Nothing to see here.",
   "main": "server.js",
   "dependencies": {
     "babel-core": "^6.26.0",
@@ -16,7 +15,10 @@
     "react-dom": "^16.2.0",
     "webpack": "^3.11.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1"
+  },
   "scripts": {
     "build": "webpack",
     "start": "npm run build && node server.js"
